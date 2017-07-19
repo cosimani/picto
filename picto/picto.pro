@@ -7,7 +7,23 @@ DEFINES += NO_PORTABLE
 # Con Speech o no
 #DEFINES += CON_SPEECH
 
-unix:DIR_OPENCV_LIBS = /usr/local/lib
+exists( /usr/local/lib/libopencv* )  {
+    message( "Posiblemente sea la compu de Cesar" )
+
+    # cesar
+    unix:DIR_OPENCV_LIBS = /usr/local/lib
+
+}
+
+! exists( /usr/local/lib/libopencv* )  {
+    message( "Posiblemente sea la compu de Emi" )
+
+    # emi
+    unix:DIR_OPENCV_LIBS = /usr/lib/x86_64-linux-gnu
+}
+
+
+#unix:DIR_OPENCV_LIBS = /usr/local/lib
 unix:DIR_OTHER_LIBS = /usr/lib/x86_64-linux-gnu
 
 unix:INCLUDEPATH += "/usr/include/GL/"

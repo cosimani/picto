@@ -6,9 +6,9 @@
 
 #ifdef NO_PORTABLE
 
-#define APPLICATION_PATH "../interface/"
-#define CLASSIFIERS_PATH "classifiers/"
-#define SOUNDS_PATH "sounds/"
+#define APPLICATION_PATH "../picto/"
+#define CLASSIFIERS_PATH "../classifiers/"
+#define SOUNDS_PATH "../sounds/"
 
 #define DATA_PATH "../data/"
 #define ICONS_PATH "icons/"
@@ -16,11 +16,11 @@
 
 #else
 
-#define APPLICATION_PATH "../interface/"
+#define APPLICATION_PATH "../picto/"
 #define CLASSIFIERS_PATH "classifiers/"
 #define SOUNDS_PATH "sounds/"
 
-#define DATA_PATH "../data/"
+#define DATA_PATH "data/"
 #define ICONS_PATH "icons/"
 #define XML_PATH "xml/"
 

@@ -13,6 +13,7 @@ Camera::Camera( QObject *parent ) :
     faceClassifier.append( CLASSIFIERS_PATH );
     faceClassifier.append( "face.xml" );
     string face = faceClassifier.toStdString();
+//    qDebug() << faceClassifier;
 
     QString smileClassifier( APPLICATION_PATH );
     smileClassifier.append( CLASSIFIERS_PATH );
